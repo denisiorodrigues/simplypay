@@ -1,4 +1,4 @@
-package domain.user;
+package com.dentech.simplypay.domain.user;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

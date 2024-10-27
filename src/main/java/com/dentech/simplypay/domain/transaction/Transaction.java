@@ -1,6 +1,6 @@
-package domain.transaction;
+package com.dentech.simplypay.domain.transaction;
 
-import domain.user.User;
+import com.dentech.simplypay.domain.user.User;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
