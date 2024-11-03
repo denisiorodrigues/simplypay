@@ -30,3 +30,13 @@ Content-Type: application/json
 ```
 
 (Link do repositório)[https://github.com/PicPay/picpay-desafio-backend]
+
+
+## Melhorias
+- [ ] criar testes unitário 
+- [ ] Criar exceções personalizadas
+- [ ] Mudar o repositório para postgresql
+
+## Novos casos de uso
+ 
+Vamos adicionar novos casos de uso para aplicar os conhecimentos adquiridos em spring boot
