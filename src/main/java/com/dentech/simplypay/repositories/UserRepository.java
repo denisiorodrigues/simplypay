@@ -1,4 +1,4 @@
-package com.dentech.simplypay.repository;
+package com.dentech.simplypay.repositories;
 
 import com.dentech.simplypay.domain.user.User;
 import org.springframework.data.jpa.repository.JpaRepository;
