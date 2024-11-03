@@ -30,23 +30,3 @@ Content-Type: application/json
 ```
 
 (Link do repositório)[https://github.com/PicPay/picpay-desafio-backend]
-
-
-## Melhorias
-- [ ] Criar testes unitário 
-- [ ] Criar exceções personalizadas
-- [ ] Mudar o repositório para postgresql
-- [ ] Fazer login
-
-## Novos casos de uso
- 
-Vamos adicionar novos casos de uso para aplicar os conhecimentos adquiridos em spring boot
-
-### UC01- Login do usuário
-Após o registro o usuário deve realizar o login com seu e-mail e senha.
-A funcionalidade deve usar a tecnologia de segurnça do springboot com JWT.
-
-
-## Referênias:
-
-- [Teste Unitário - Youtube - Fernanda Kipper](https://www.youtube.com/watch?v=T6ChO8LQxRE&list=PLNCSWIsR6ADISYlzI7POWQqYQ8x0VwNqh&index=8)
