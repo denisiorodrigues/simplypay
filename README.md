@@ -37,6 +37,7 @@ Content-Type: application/json
 - [ ] Criar exceções personalizadas
 - [ ] Mudar o repositório para postgresql
 - [ ] Fazer login
+- [ ] Adicionar o Swagger
 
 ## Novos casos de uso
 
