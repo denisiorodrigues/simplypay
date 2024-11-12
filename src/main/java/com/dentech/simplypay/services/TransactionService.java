@@ -23,7 +23,7 @@ public class TransactionService {
     private TransactionRepository transactionRepository;
 
     @Autowired
-    private RestTemplate restTemplate;
+    private AuthorizationService authorizationService;
 
     @Autowired
     private NotificationService notificationService;
@@ -33,7 +33,7 @@ public class TransactionService {
         User receiver = this.userService.findUserById(transaction.receiverId());
 
         userService.validationTransaction(sender, transaction.value());
-        boolean isAuthorize = this.authorizeTransaction(sender, transaction.value());
+        boolean isAuthorize = this.authorizationService.authorizeTransaction(sender, transaction.value());
         if(!isAuthorize){
             throw new Exception("Transação não autorizada");
         }
@@ -55,17 +55,5 @@ public class TransactionService {
         this.notificationService.sendNotification(receiver, "Transação recebida com sucesso");
 
         return newTransaction;
-    }
-
-    public boolean authorizeTransaction(User sender, BigDecimal value) {
-        String url = "https://util.devi.tools/api/v2/authorize";
-        ResponseEntity<Map> authorizeResponse = this.restTemplate.getForEntity(url, Map.class);
-
-        if(authorizeResponse.getStatusCode() == HttpStatus.OK){
-            Map<String, Object> data = (Map<String, Object>) authorizeResponse.getBody().get("data");
-            return (boolean) data.containsKey("authorization");
-        }
-
-        return false;
     }
 }
