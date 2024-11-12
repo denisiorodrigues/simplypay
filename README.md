@@ -33,7 +33,7 @@ Content-Type: application/json
 
 
 ## Melhorias
-- [ ] Criar testes unitário
+- [x] Criar testes unitário
 - [ ] Criar exceções personalizadas
 - [ ] Mudar o repositório para postgresql
 - [ ] Fazer login
